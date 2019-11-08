@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MMS.Core</name>
+    </assembly>
+    <members>
+        <member name="T:MMS.Core.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:MMS.Core.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:MMS.Core.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.AlertDangerTagHelper">
+            <summary>
+            Create danger alert
+            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.AlertDangerTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Create danger alert
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.AlertDarkTagHelper">
+            <summary>
+            Create dark alert
+            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.AlertDarkTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Create dark alert
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.AlertInfoTagHelper">
+            <summary>
+            Create info alert
+            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.AlertInfoTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Create info alert
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.AlertLightTagHelper">
+            <summary>
+            Create light alert
+            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.AlertLightTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Create light alert
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.AlertPrimaryTagHelper">
+            <summary>
+            Create primary alert
+            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.AlertPrimaryTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Create primary alert
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.AlertSecondaryTagHelper">
+            <summary>
+            Create secondary alert
+            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.AlertSecondaryTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Create secondary alert
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.AlertSuccessTagHelper">
+            <summary>
+            Create success alert
+            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.AlertSuccessTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Create success alert
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Alerts.Alert">
+            <summary>
+            Alert item that can be created in the backend manually for pushing alert to themp data
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Alerts.Alert.TempDataKey">
+            <summary>
+            Key to find alerts in TempData dictionary
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Alerts.Alert.Style">
+            <summary>
+            Alert style depending on Bootstrap 4.x classes
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Alerts.Alert.Heading">
+            <summary>
+            Header text for the alert message
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Alerts.Alert.Message">
+            <summary>
+            Alert message body
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Alerts.Alert.Dismissable">
+            <summary>
+            true for dismissable alert
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Alerts.AlertStyles">
+            <summary>
+            Alert Style bases on bootstrap alerts.
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Alerts.AlertStyles.Primary">
+            <summary>
+            bootstraps' alert-primary
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Alerts.AlertStyles.Secondary">
+            <summary>
+            bootstraps' alert-secondary
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Alerts.AlertStyles.Success">
+            <summary>
+            bootstraps' alert-success
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Alerts.AlertStyles.Danger">
+            <summary>
+            bootstraps' alert-danger
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Alerts.AlertStyles.Warning">
+            <summary>
+            bootstraps' alert-warning
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Alerts.AlertStyles.Info">
+            <summary>
+            bootstraps' alert-info
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Alerts.AlertStyles.Light">
+            <summary>
+            bootstraps' alert-light
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Alerts.AlertStyles.Dark">
+            <summary>
+            bootstraps' alert-dark
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.AlertTagHelper">
+            <summary>
+            Alert messages with bootstrap 4.x styles
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.AlertTagHelper.Heading">
+            <summary>
+            Heading text for the alert
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.AlertTagHelper.Dismissable">
+            <summary>
+            <para>Is the alert dismissible?</para>
+            <para>Default is true.</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.AlertTagHelper.ViewContext">
+            <summary>
+            View context to access TempData, mainly to get alerts originating in the backend.
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.AlertTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Create alert messages styled with bootstrap 4.x
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.AlertWarningTagHelper">
+            <summary>
+            Create warning alert
+            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.AlertWarningTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Create danger alert
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.EmailLinkTagHelper">
+            <summary>
+            <para>Creates an email link with circled check mark
+            if the email is confirmed; otherwise shows an exclamation mark.</para>
+            <para>Uses Font-Awesome by default; but can be changed.</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.EmailLinkTagHelper.EmailConfirmed">
+            <summary>
+            <para>Indicates whether the email is confirmed or not.</para>
+            <para>There 3 possible configurations:</para>
+            <list type="number">
+            <item><see langword="null"/><description>Hello Description!</description></item>
+            <item><see langword="true"/></item>
+            <item><see langword="false"/></item>
+            </list>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.EmailLinkTagHelper.IconFontBaseClass">
+            <summary>
+            Icon font's base class. Default is "fas"
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.EmailLinkTagHelper.CheckCssClass">
+            <summary>
+            Confirmed check mark icon's css class. Default is "fa-check-circle"
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.EmailLinkTagHelper.ExclamationCssClass">
+            <summary>
+            <b>NOT Confirmed</b> check mark icon's css class. Default is "fa-exclamation"
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.EmailLinkTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process in creating email tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Extensions.TempDataExtensions">
+            <summary>
+            Extension methods used to add complex object and fix json's serialization problem
+            </summary>
+            <![CDATA[https://stackoverflow.com/a/35042391/5519026]]>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Put``1(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,``0)">
+            <summary>
+            Puts an object with a key into the TempData dictionary
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="tempData"></param>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Get``1(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String)">
+            <summary>
+            Gets an object from the TempData using its key.
+            Retruns null if the objects does not exist.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="tempData"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Peek``1(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String)">
+            <summary>
+            Returns an object that contains the element that is 
+            associated with the specified key, without marking the key
+            for deletion.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="tempData"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Primary(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create primary alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Secondary(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create secondary alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Success(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create success alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Danger(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create danger alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Warning(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create warning alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Info(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create info alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Light(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create light alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Dark(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create dark alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+    </members>
+</doc>

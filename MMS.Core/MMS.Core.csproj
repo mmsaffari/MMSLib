@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.0</TargetFramework>
+		<ApplicationIcon>files\icon.ico</ApplicationIcon>
+		<Authors>Mohammad M. Saffari</Authors>
+		<Company>saffari.space</Company>
+		<Description>A constantly under development collection of helpers and utilities for ASP.NET Core web applications</Description>
+		<Copyright>saffari.space</Copyright>
+		<PackageProjectUrl>http://blog.saffari.space/asp_net_core</PackageProjectUrl>
+		<PackageLicenseFile>license.txt</PackageLicenseFile>
+		<PackageIcon>icon.png</PackageIcon>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<PackageTags>asp.net, core, mvc</PackageTags>
+		<PackageReleaseNotes></PackageReleaseNotes>
+		<Version>1.0.0.0</Version>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageLicenseUrl></PackageLicenseUrl>
+		<PackageIconUrl>https://raw.githubusercontent.com/mmsaffari/MMSLib/master/MMS.Core/files/icon.png</PackageIconUrl>
+		<RepositoryUrl>https://github.com/mmsaffari/MMSLib</RepositoryUrl>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<DocumentationFile>files\MMS.Core.xml</DocumentationFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" Version="3.0.0" Exclude="Build,Analyzers" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="files\icon.ico">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="files\icon.png" Pack="true" PackagePath="">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Templates\LocalizationValidationScripts_jsdeliver.html">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Templates\LocalizationValidationScripts_local.html">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Include="files\license.txt" Pack="true" PackagePath="" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Update="Properties\Resources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Resources.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+	<ItemGroup>
+	  <EmbeddedResource Update="Properties\Resources.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+</Project>
