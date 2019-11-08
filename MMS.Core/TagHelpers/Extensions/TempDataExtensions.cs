@@ -143,17 +143,17 @@ namespace MMS.Core.TagHelpers.Extensions {
 		}
 
 		private static void AddAlert(ITempDataDictionary tempData, AlertStyles style, string message, string header, bool dismissable) {
-			var alerts = tempData.ContainsKey(Alert.TempDataKey)
-				? JsonSerializer.Deserialize<List<Alert>>(tempData[Alert.TempDataKey].ToString())
-				: new List<Alert>();
-			alerts.Add(new Alert {
+			var alerts = tempData.ContainsKey(AlertModel.TempDataKey)
+				? JsonSerializer.Deserialize<List<AlertModel>>(tempData[AlertModel.TempDataKey].ToString())
+				: new List<AlertModel>();
+			alerts.Add(new AlertModel {
 				Style = style,
 				Heading = header,
 				Message = message,
 				Dismissable = dismissable
 			});
 
-			tempData.Put(Alert.TempDataKey, alerts);
+			tempData.Put(AlertModel.TempDataKey, alerts);
 		}
 		#endregion
 

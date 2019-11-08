@@ -1,14 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
-using MMS.Core.TagHelpers.Alerts;
 using MMS.Core.TagHelpers.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MMS.Core.TagHelpers {
+namespace MMS.Core.TagHelpers.Alerts {
 	/// <summary>
 	/// Alert messages with bootstrap 4.x styles
 	/// </summary>
@@ -39,22 +38,22 @@ namespace MMS.Core.TagHelpers {
 			output.TagName = "div";
 			
 			if (ViewContext != null) {
-				var alerts = ViewContext.TempData.ContainsKey(Alert.TempDataKey)
+				var alerts = ViewContext.TempData.ContainsKey(AlertModel.TempDataKey)
 					//? JsonConvert.DeserializeObject<List<Alert>>(ViewContext.TempData[Alert.TempDataKey].ToString())
 					//? (List<Alert>)ViewContext.TempData[Alert.TempDataKey]
-					? ViewContext.TempData.Get<List<Alert>>(Alert.TempDataKey)
-					: new List<Alert>();
+					? ViewContext.TempData.Get<List<AlertModel>>(AlertModel.TempDataKey)
+					: new List<AlertModel>();
 
 				alerts.ForEach(x => output.Content.AppendHtml(AddAlert(x)));
 
-				ViewContext.TempData.Remove(Alert.TempDataKey);
+				ViewContext.TempData.Remove(AlertModel.TempDataKey);
 			}
 
 			// read alerts contents from inner html
 			var msg = await output.GetChildContentAsync();
 
 			if (!string.IsNullOrWhiteSpace(msg.GetContent())) {
-				var manualAlert = AddAlert(new Alert {
+				var manualAlert = AddAlert(new AlertModel {
 					Heading = this.Heading,
 					Message = msg.GetContent(),
 					Style = this.Style,
@@ -65,7 +64,7 @@ namespace MMS.Core.TagHelpers {
 
 		}
 
-		private TagBuilder AddAlert(Alert alert) {
+		private TagBuilder AddAlert(AlertModel alert) {
 			var _alert = new TagBuilder("div");
 
 			var alertStyle = Enum.GetName(typeof(AlertStyles), alert.Style).ToLower();

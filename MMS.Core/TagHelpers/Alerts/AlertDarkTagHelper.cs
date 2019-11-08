@@ -1,18 +1,17 @@
 ﻿using Microsoft.AspNetCore.Razor.TagHelpers;
-using MMS.Core.TagHelpers.Alerts;
 using System.Threading.Tasks;
 
-namespace MMS.Core.TagHelpers {
+namespace MMS.Core.TagHelpers.Alerts {
 	/// <summary>
-	/// Create danger alert
+	/// Create dark alert
 	/// Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
 	/// </summary>
-	public class AlertDangerTagHelper : AlertTagHelper {
+	public class AlertDarkTagHelper : AlertTagHelper {
 		/// <summary>
-		/// Create danger alert
+		/// Create dark alert
 		/// </summary>
 		public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output) {
-			base.Style = AlertStyles.Danger;
+			base.Style = AlertStyles.Dark;
 			await base.ProcessAsync(context, output);
 		}
 	}

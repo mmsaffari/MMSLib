@@ -12,13 +12,7 @@ namespace MMS.Core.TagHelpers {
 	/// </summary>
 	public class EmailLinkTagHelper : TagHelper {
 		/// <summary>
-		/// <para>Indicates whether the email is confirmed or not.</para>
-		/// <para>There 3 possible configurations:</para>
-		/// <list type="number">
-		/// <item><see langword="null"/><description>Hello Description!</description></item>
-		/// <item><see langword="true"/></item>
-		/// <item><see langword="false"/></item>
-		/// </list>
+		/// <para>Indicates whether the email is confirmed or not or it's unknown.</para>
 		/// </summary>
 		public bool? EmailConfirmed { get; set; }
 

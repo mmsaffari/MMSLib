@@ -1,18 +1,20 @@
 ﻿using Microsoft.AspNetCore.Razor.TagHelpers;
-using MMS.Core.TagHelpers.Alerts;
+using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace MMS.Core.TagHelpers {
+namespace MMS.Core.TagHelpers.Alerts {
 	/// <summary>
-	/// Create info alert
+	/// Create primary alert
 	/// Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
 	/// </summary>
-	public class AlertInfoTagHelper : AlertTagHelper {
+	public class AlertPrimaryTagHelper : AlertTagHelper {
 		/// <summary>
-		/// Create info alert
+		/// Create primary alert
 		/// </summary>
 		public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output) {
-			base.Style = AlertStyles.Info;
+			base.Style = AlertStyles.Primary;
 			await base.ProcessAsync(context, output);
 		}
 	}

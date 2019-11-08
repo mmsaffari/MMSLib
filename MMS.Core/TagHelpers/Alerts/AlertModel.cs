@@ -6,7 +6,7 @@ namespace MMS.Core.TagHelpers.Alerts {
 	/// <summary>
 	/// Alert item that can be created in the backend manually for pushing alert to themp data
 	/// </summary>
-	internal class Alert {
+	internal class AlertModel {
 		/// <summary>
 		/// Key to find alerts in TempData dictionary
 		/// </summary>

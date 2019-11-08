@@ -20,111 +20,100 @@
               resource lookups using this strongly typed resource class.
             </summary>
         </member>
-        <member name="T:MMS.Core.TagHelpers.AlertDangerTagHelper">
+        <member name="T:MMS.Core.TagHelpers.Alerts.AlertDangerTagHelper">
             <summary>
             Create danger alert
             Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
             </summary>
         </member>
-        <member name="M:MMS.Core.TagHelpers.AlertDangerTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+        <member name="M:MMS.Core.TagHelpers.Alerts.AlertDangerTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
             <summary>
             Create danger alert
             </summary>
         </member>
-        <member name="T:MMS.Core.TagHelpers.AlertDarkTagHelper">
+        <member name="T:MMS.Core.TagHelpers.Alerts.AlertDarkTagHelper">
             <summary>
             Create dark alert
             Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
             </summary>
         </member>
-        <member name="M:MMS.Core.TagHelpers.AlertDarkTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+        <member name="M:MMS.Core.TagHelpers.Alerts.AlertDarkTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
             <summary>
             Create dark alert
             </summary>
         </member>
-        <member name="T:MMS.Core.TagHelpers.AlertInfoTagHelper">
+        <member name="T:MMS.Core.TagHelpers.Alerts.AlertInfoTagHelper">
             <summary>
             Create info alert
             Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
             </summary>
         </member>
-        <member name="M:MMS.Core.TagHelpers.AlertInfoTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+        <member name="M:MMS.Core.TagHelpers.Alerts.AlertInfoTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
             <summary>
             Create info alert
             </summary>
         </member>
-        <member name="T:MMS.Core.TagHelpers.AlertLightTagHelper">
+        <member name="T:MMS.Core.TagHelpers.Alerts.AlertLightTagHelper">
             <summary>
             Create light alert
             Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
             </summary>
         </member>
-        <member name="M:MMS.Core.TagHelpers.AlertLightTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+        <member name="M:MMS.Core.TagHelpers.Alerts.AlertLightTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
             <summary>
             Create light alert
             </summary>
         </member>
-        <member name="T:MMS.Core.TagHelpers.AlertPrimaryTagHelper">
-            <summary>
-            Create primary alert
-            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
-            </summary>
-        </member>
-        <member name="M:MMS.Core.TagHelpers.AlertPrimaryTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
-            <summary>
-            Create primary alert
-            </summary>
-        </member>
-        <member name="T:MMS.Core.TagHelpers.AlertSecondaryTagHelper">
-            <summary>
-            Create secondary alert
-            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
-            </summary>
-        </member>
-        <member name="M:MMS.Core.TagHelpers.AlertSecondaryTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
-            <summary>
-            Create secondary alert
-            </summary>
-        </member>
-        <member name="T:MMS.Core.TagHelpers.AlertSuccessTagHelper">
-            <summary>
-            Create success alert
-            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
-            </summary>
-        </member>
-        <member name="M:MMS.Core.TagHelpers.AlertSuccessTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
-            <summary>
-            Create success alert
-            </summary>
-        </member>
-        <member name="T:MMS.Core.TagHelpers.Alerts.Alert">
+        <member name="T:MMS.Core.TagHelpers.Alerts.AlertModel">
             <summary>
             Alert item that can be created in the backend manually for pushing alert to themp data
             </summary>
         </member>
-        <member name="F:MMS.Core.TagHelpers.Alerts.Alert.TempDataKey">
+        <member name="F:MMS.Core.TagHelpers.Alerts.AlertModel.TempDataKey">
             <summary>
             Key to find alerts in TempData dictionary
             </summary>
         </member>
-        <member name="P:MMS.Core.TagHelpers.Alerts.Alert.Style">
+        <member name="P:MMS.Core.TagHelpers.Alerts.AlertModel.Style">
             <summary>
             Alert style depending on Bootstrap 4.x classes
             </summary>
         </member>
-        <member name="P:MMS.Core.TagHelpers.Alerts.Alert.Heading">
+        <member name="P:MMS.Core.TagHelpers.Alerts.AlertModel.Heading">
             <summary>
             Header text for the alert message
             </summary>
         </member>
-        <member name="P:MMS.Core.TagHelpers.Alerts.Alert.Message">
+        <member name="P:MMS.Core.TagHelpers.Alerts.AlertModel.Message">
             <summary>
             Alert message body
             </summary>
         </member>
-        <member name="P:MMS.Core.TagHelpers.Alerts.Alert.Dismissable">
+        <member name="P:MMS.Core.TagHelpers.Alerts.AlertModel.Dismissable">
             <summary>
             true for dismissable alert
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Alerts.AlertPrimaryTagHelper">
+            <summary>
+            Create primary alert
+            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Alerts.AlertPrimaryTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Create primary alert
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Alerts.AlertSecondaryTagHelper">
+            <summary>
+            Create secondary alert
+            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Alerts.AlertSecondaryTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Create secondary alert
             </summary>
         </member>
         <member name="T:MMS.Core.TagHelpers.Alerts.AlertStyles">
@@ -172,39 +161,50 @@
             bootstraps' alert-dark
             </summary>
         </member>
-        <member name="T:MMS.Core.TagHelpers.AlertTagHelper">
+        <member name="T:MMS.Core.TagHelpers.Alerts.AlertSuccessTagHelper">
+            <summary>
+            Create success alert
+            Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Alerts.AlertSuccessTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Create success alert
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Alerts.AlertTagHelper">
             <summary>
             Alert messages with bootstrap 4.x styles
             </summary>
         </member>
-        <member name="P:MMS.Core.TagHelpers.AlertTagHelper.Heading">
+        <member name="P:MMS.Core.TagHelpers.Alerts.AlertTagHelper.Heading">
             <summary>
             Heading text for the alert
             </summary>
         </member>
-        <member name="P:MMS.Core.TagHelpers.AlertTagHelper.Dismissable">
+        <member name="P:MMS.Core.TagHelpers.Alerts.AlertTagHelper.Dismissable">
             <summary>
             <para>Is the alert dismissible?</para>
             <para>Default is true.</para>
             </summary>
         </member>
-        <member name="P:MMS.Core.TagHelpers.AlertTagHelper.ViewContext">
+        <member name="P:MMS.Core.TagHelpers.Alerts.AlertTagHelper.ViewContext">
             <summary>
             View context to access TempData, mainly to get alerts originating in the backend.
             </summary>
         </member>
-        <member name="M:MMS.Core.TagHelpers.AlertTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+        <member name="M:MMS.Core.TagHelpers.Alerts.AlertTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
             <summary>
             Create alert messages styled with bootstrap 4.x
             </summary>
         </member>
-        <member name="T:MMS.Core.TagHelpers.AlertWarningTagHelper">
+        <member name="T:MMS.Core.TagHelpers.Alerts.AlertWarningTagHelper">
             <summary>
             Create warning alert
             Alert contents must be replaced between alert tags e.g. <![CDATA[<alert-success>job done!</alert-success>]]>
             </summary>
         </member>
-        <member name="M:MMS.Core.TagHelpers.AlertWarningTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+        <member name="M:MMS.Core.TagHelpers.Alerts.AlertWarningTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
             <summary>
             Create danger alert
             </summary>
@@ -218,13 +218,7 @@
         </member>
         <member name="P:MMS.Core.TagHelpers.EmailLinkTagHelper.EmailConfirmed">
             <summary>
-            <para>Indicates whether the email is confirmed or not.</para>
-            <para>There 3 possible configurations:</para>
-            <list type="number">
-            <item><see langword="null"/><description>Hello Description!</description></item>
-            <item><see langword="true"/></item>
-            <item><see langword="false"/></item>
-            </list>
+            <para>Indicates whether the email is confirmed or not or it's unknown.</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.EmailLinkTagHelper.IconFontBaseClass">
