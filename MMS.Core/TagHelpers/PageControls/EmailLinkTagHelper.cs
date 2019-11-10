@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MMS.Core.TagHelpers {
+namespace MMS.Core.TagHelpers.PageControls {
 	/// <summary>
 	/// <para>Creates an email link with circled check mark
 	/// if the email is confirmed; otherwise shows an exclamation mark.</para>
