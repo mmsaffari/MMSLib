@@ -20,6 +20,32 @@
               resource lookups using this strongly typed resource class.
             </summary>
         </member>
+        <member name="P:MMS.Core.Properties.Resources.LocalizationValidationScripts_jsdeliver">
+             <summary>
+               Looks up a localized string similar to &lt;!-- cldr scripts (needed for globalize) --&gt;
+            &lt;script src=&quot;https://cdn.jsdelivr.net/gh/rxaviers/cldrjs@0.5.1/dist/cldr.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;https://cdn.jsdelivr.net/gh/rxaviers/cldrjs@0.5.1/dist/cldr/event.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;https://cdn.jsdelivr.net/gh/rxaviers/cldrjs@0.5.1/dist/cldr/supplemental.js&quot;&gt;&lt;/script&gt;
+            
+            &lt;!-- globalize scripts --&gt;
+            &lt;script src=&quot;https://cdn.jsdelivr.net/gh/globalizejs/globalize@1.4.2/dist/globalize.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;https://cdn.jsdelivr.net/gh/globalizejs/g [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:MMS.Core.Properties.Resources.LocalizationValidationScripts_local">
+             <summary>
+               Looks up a localized string similar to &lt;!-- cldr scripts (needed for globalize) --&gt;
+            &lt;script src=&quot;/lib/cldr/dist/cldr.min.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;/lib/cldr/dist/cldr/event.min.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;/lib/cldr/dist/cldr/supplemental.min.js&quot;&gt;&lt;/script&gt;
+            
+            &lt;!-- globalize scripts --&gt;
+            &lt;script src=&quot;/lib/globalize/dist/globalize.min.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;/lib/globalize/dist/globalize/number.min.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;/lib/globalize/dist/globalize/date.min.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;/lib/globalize/dist/globalize/currency.min.js&quot;&gt;&lt;/s [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
         <member name="T:MMS.Core.TagHelpers.Alerts.AlertDangerTagHelper">
             <summary>
             Create danger alert
@@ -209,41 +235,6 @@
             Create danger alert
             </summary>
         </member>
-        <member name="T:MMS.Core.TagHelpers.EmailLinkTagHelper">
-            <summary>
-            <para>Creates an email link with circled check mark
-            if the email is confirmed; otherwise shows an exclamation mark.</para>
-            <para>Uses Font-Awesome by default; but can be changed.</para>
-            </summary>
-        </member>
-        <member name="P:MMS.Core.TagHelpers.EmailLinkTagHelper.EmailConfirmed">
-            <summary>
-            <para>Indicates whether the email is confirmed or not or it's unknown.</para>
-            </summary>
-        </member>
-        <member name="P:MMS.Core.TagHelpers.EmailLinkTagHelper.IconFontBaseClass">
-            <summary>
-            Icon font's base class. Default is "fas"
-            </summary>
-        </member>
-        <member name="P:MMS.Core.TagHelpers.EmailLinkTagHelper.CheckCssClass">
-            <summary>
-            Confirmed check mark icon's css class. Default is "fa-check-circle"
-            </summary>
-        </member>
-        <member name="P:MMS.Core.TagHelpers.EmailLinkTagHelper.ExclamationCssClass">
-            <summary>
-            <b>NOT Confirmed</b> check mark icon's css class. Default is "fa-exclamation"
-            </summary>
-        </member>
-        <member name="M:MMS.Core.TagHelpers.EmailLinkTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
-            <summary>
-            process in creating email tag helper
-            </summary>
-            <param name="context"></param>
-            <param name="output"></param>
-            <returns></returns>
-        </member>
         <member name="T:MMS.Core.TagHelpers.Extensions.TempDataExtensions">
             <summary>
             Extension methods used to add complex object and fix json's serialization problem
@@ -351,6 +342,616 @@
             <param name="message">Message body</param>
             <param name="header">Message header</param>
             <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper">
+            <summary>
+            Creates a language-selection navigation menu based on supported cultures
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.CultureKeyName">
+            <summary>
+            Optional: Route data key name for the culture part, default "culture"
+            Default: cultute
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.SupportedCultures">
+            <summary>
+            Optional: Manually specify a comma-separated list of supported cultures
+            <example>
+            en-US, fa-IR, de, fr
+            </example>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.LanguageLabel">
+            <summary>
+            Optional: The part of culture to show as menu items' label.
+            Default: LanguageLabel.EnglishName
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.RedirectTo">
+            <summary>
+            Optional: Specify the redirect policy for when the language is changed
+            Default value: RedirectTo.SamePage
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.HomePageName">
+            <summary>
+            Optinal: The URL part after the culture when RedirectTo is HomePage
+            <example>/en/Home/Index</example>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.ViewContext">
+            <summary>
+            Current view context
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.RenderMode">
+            <summary>
+            Render mode: Classic for an HTML dropdown list, Bootstrap for HTML5 div with Bootstrap4 style (which is the default).
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper._reqLocOpts">
+            <summary>
+            required for listing supported cultures
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.#ctor(Microsoft.Extensions.Logging.ILogger{MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Builder.RequestLocalizationOptions},Microsoft.AspNetCore.Routing.LinkGenerator,Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.MvcOptions})">
+            <summary>
+            Creates a language navigation menu, depends on supported cultures
+            Uses Property Injection to receive Logger and stuff.
+            </summary>
+            <param name="logger">Logger facility</param>
+            <param name="requestLocalizationOptions">Request localization options</param>
+            <param name="linkGenerator">link generator</param>
+            <param name="mvcOptions">MVC Options</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Created the language navigation element
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.CreateClassicItems(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput@,System.Collections.Generic.List{MMS.Core.TagHelpers.Globalization.Models.LanguageItem})">
+            <summary>
+            Creates <b>classic</b> list items.
+            <example><![CDATA[<option value="/en-US">English</option>]]></example>
+            </summary>
+            <param name="languages">A list of <see cref="T:MMS.Core.TagHelpers.Globalization.Models.LanguageItem"/>s</param>
+            <param name="output">Generated TagHelperOuput</param>
+            <returns></returns>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.CreateBootstrapItems(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput@,System.Collections.Generic.List{MMS.Core.TagHelpers.Globalization.Models.LanguageItem})">
+            <summary>
+            Create <b>modern</b> list items.
+            <example><![CDATA[<a href="/en-US" class="itemxyz">English</a>]]></example>
+            </summary>
+            <param name="languages">A list of <see cref="T:MMS.Core.TagHelpers.Globalization.Models.LanguageItem"/>s</param>
+            <param name="output">Generated TagHelperOuput</param>
+            <returns></returns>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.CreateNavDictionary">
+            <summary>
+            Creates a list of all supported cultures
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.CreateRouteDataDictionary">
+            <summary>
+            Returns a <![CDATA[Dictionary<string, object>]]> representing route data values for the current route
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper.GetSupportedCultures">
+            <summary>
+            Returns a list of supported CultureInfos
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Globalization.LocalizationValidationScriptsTagHelperComponentTagHelper">
+            <summary>
+            Creates localization validation scripts tag to place client side validiation scripts inside
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LocalizationValidationScriptsTagHelperComponentTagHelper.DEFAULT_SOURCE">
+            <summary>
+            Default script source
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LocalizationValidationScriptsTagHelperComponentTagHelper.DEFAULT_CLDR_VERSION">
+            <summary>
+            Default JsDeliver CLDR version
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LocalizationValidationScriptsTagHelperComponentTagHelper.Source">
+            <summary>
+            (Optional) Defines where to load scripts from, Local [under <![CDATA[~/wwwroot/lib/cldr-data/main/<culture>]]>] or JsDelivr.
+            <para>Default: JsDelivr</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LocalizationValidationScriptsTagHelperComponentTagHelper.CldrVersion">
+            <summary>
+            (Optional) Set cldr version to load.
+            <para>Default: 35.1.0</para>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizationValidationScriptsTagHelperComponentTagHelper.#ctor(Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            creates localization validation scripts tag to place client side validiation scripts inside
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Globalization.LocalizationValidationScriptsTagHelperComponent">
+            <summary>
+            Inserts localized scripts requeired for client side validation into the relevant tag
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.LocalizationValidationScriptsTagHelperComponent.DEFAULT_CULTURE">
+            <summary>
+            Default script culture
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizationValidationScriptsTagHelperComponent.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Inserts localized scripts requeired for client side validation into the relevant tag
+            </summary>
+            <param name="hosting"></param>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LocalizationValidationScriptsTagHelperComponent.Order">
+            <summary>
+            Default order is 0 we change it to 1!
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizationValidationScriptsTagHelperComponent.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Generates the output
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizationValidationScriptsTagHelperComponent.GetCultureName">
+            <summary>
+            find json files related to the current culture, if not found return parent culture, if not found return default culture.
+            see ClientSideValidationScripts.html for how to configure paths
+            </summary>
+            <returns>culture name e.g. tr</returns>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Globalization.Models.LanguageLabel">
+            <summary>
+            The label to display for language dropdown list on language names
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.Models.LanguageLabel.Name">
+            <summary>
+            Culture name
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.Models.LanguageLabel.DisplayName">
+            <summary>
+            Culture display name
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.Models.LanguageLabel.EnglishName">
+            <summary>
+            Culture English name
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.Models.LanguageLabel.NativeName">
+            <summary>
+            Culture native name
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.Models.LanguageLabel.TwoLetterISOLanguageName">
+            <summary>
+            Two letter ISO language name
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Globalization.Models.RedirectTo">
+            <summary>
+            Defines where to redirect when language is changes
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.Models.RedirectTo.HomePage">
+            <summary>
+            redirects to home page in the project root
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.Models.RedirectTo.SamePage">
+            <summary>
+            redirects to the same page and keep all filter like search
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.Models.RedirectTo.SamePageNoQueryString">
+            <summary>
+            redirect to the same page and clear all filters (QueryString) values
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Globalization.Models.RenderMode">
+            <summary>
+            choose render mode style,
+            <para>classic: regular dropdown select list</para>
+            <para>Bootstrap4: HTML5 div with Bootstrap4 support</para>
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.Models.RenderMode.Classic">
+            <summary>
+            regular dropdown list
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.Models.RenderMode.Bootstrap">
+            <summary>
+            HTML5 div with Bootstrap 4 support
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Globalization.Models.ScriptSource">
+            <summary>
+            The location to load localization valdiation scripts from
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.Models.ScriptSource.Local">
+            <summary>
+            Valdiation scripts are loaded from wwwroot/lib folder
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.Globalization.Models.ScriptSource.JsDeliver">
+            <summary>
+            Valdiation scripts will be loaded from jsdelivr
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.PageControls.EmailLinkTagHelper">
+            <summary>
+            <para>Creates an email link with circled check mark
+            if the email is confirmed; otherwise shows an exclamation mark.</para>
+            <para>Uses Font-Awesome by default; but can be changed.</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.EmailLinkTagHelper.EmailConfirmed">
+            <summary>
+            <para>Indicates whether the email is confirmed or not or it's unknown.</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.EmailLinkTagHelper.IconFontBaseClass">
+            <summary>
+            Icon font's base class. Default is "fas"
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.EmailLinkTagHelper.CheckCssClass">
+            <summary>
+            Confirmed check mark icon's css class. Default is "fa-check-circle"
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.EmailLinkTagHelper.ExclamationCssClass">
+            <summary>
+            <b>NOT Confirmed</b> check mark icon's css class. Default is "fa-exclamation"
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.PageControls.EmailLinkTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process in creating email tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.PageControls.PagingTagHelper">
+            <summary>
+            Creates a pagination control
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.PageControls.PagingTagHelper.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{MMS.Core.TagHelpers.PageControls.PagingTagHelper})">
+            <summary>
+            Creates a PagingTagHelper and injects Configuration and Logger properties.
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.PageNo">
+            <summary>
+            Current page number
+            <para>Default: 1</para>
+            <para>Example: p=1</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.PageSize">
+            <summary>
+            Number of records shown on each page
+            <para>Default: 25</para>
+            <para>Example: pagesize=25</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TotalRecords">
+            <summary>
+            Total record count
+            <para>Default: 0</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.MaxDisplayedPages">
+            <summary>
+            If the count of pages is more than this attribute, show only this number of pages with numbered buttons and show an ellipsis for other pages.
+            <para>Default: 10</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.GapSize">
+            <summary>
+            Gap size to start show first/last numbered page
+            <para>Default: 5</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.SettingsJson">
+            <summary>
+            Name of the paging section in <b>MMS:Paging</b> section inside appSettings.json
+            <param>Default: "default"</param>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.PageSizeNavFormMethod">
+            <summary>
+            Form submit method when selecting different page size option
+            <para>Default: get</para>
+            <para>Options: get, post</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.PageSizeNavBlockSize">
+            <summary>
+            The minimum block size to populate all possible page sizes for dropdown list
+            <para>Default: 25</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.PageSizeNavMaxItems">
+            <summary>
+            Maximum nmber of items to show in the page size navigation menu
+            <para>Default: 5</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.PageSizeNavOnChange">
+            <summary>
+            Action to execute when page size dropdown changes
+            <para>Default: this.form.submit();</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.QueryStringKeyPageNo">
+            <summary>
+            Query string paramter name for current page.
+            <para>Default: p</para>
+            <para>exmaple: p=1</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.QueryStringKeyPageSize">
+            <summary>
+            Query string parameter name for page size
+            <para>Default: s</para>
+            <para>Example: s=25</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.QueryStringValue">
+            <summary>
+            Query string value starting from the ? including all next query string parameters 
+            to consider for next pages links.
+            <para>Default: string.Empty</para>
+            <example>
+            <code>
+            @(Request.QueryString.Value)
+            </code>
+            </example>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowPageSizeNav">
+            <summary>
+            Show drop down list for different page size options
+            <para>Default: false</para>
+            <para>Options: true, false</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowFirstLast">
+            <summary>
+            Show or hide First and Last page buttons
+            <para>Default: false, but will auto show if total pages > max displayed pages</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowPrevNext">
+            <summary>
+            Show or hide Previous and Next page buttons
+            <para>Default: false</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowTotalPages">
+            <summary>
+            Show or hide total pages count
+            <para>Default: false</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowTotalRecords">
+            <summary>
+            Show or hide total records count
+            <para>Default: false</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowLastNumberedPage">
+            <summary>
+            Show last numbered page when total pages count is larger than max displayed pages
+            <para>Default: false</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowFirstNumberedPage">
+            <summary>
+            Show first numbered page when total pages count is larger than max displayed pages
+            <para>Default: false</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextPageSize">
+            <summary>
+            The text to display at page size dropdown list label
+            <para>Default: Items per page </para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextFirst">
+            <summary>
+            Text to show on the "Go To First" Page button
+            <para>
+            <![CDATA[Default: &laquo;]]></para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextLast">
+            <summary>
+            Text to show on "Go to last page" button
+            <para>
+            <![CDATA[Default: &raquo;]]></para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextNext">
+            <summary>
+            Next button text
+            <para>
+            <![CDATA[Default: &rsaquo;]]></para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextPrevious">
+            <summary>
+            previous button text
+            <para>
+            <![CDATA[Default: &lsaquo;]]></para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextTotalPages">
+            <summary>
+            Display text for total pages label
+            <para>Default: pages</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextTotalRecords">
+            <summary>
+            Display text for total records label
+            <para>Default: records</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.SrTextFirst">
+            <summary>
+            Text for screen readers only on First button
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.SrTextLast">
+            <summary>
+            Text for screen readers only on Last button
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.SrTextNext">
+            <summary>
+            Text for screenreaders only on Next button
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.SrTextPrevious">
+            <summary>
+            Text for screen readers only on Previous button
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.Class">
+            <summary>
+            Add custom class to content div
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassPagingControlDiv">
+            <summary>
+            CSS class for pagination div
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassInfoDiv">
+            <summary>
+            CSS class for page count/record count div
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassPageSizeDiv">
+            <summary>
+            CSS class for page size div
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassPagingControl">
+            <summary>
+            CSS class for pagination control
+            <para>Default: pagination</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassActivePage">
+            <summary>
+            CSS class name for the active page button
+            <para>Default: active</para>
+            <para>examples: disabled, active, ...</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassDisabledJumpingButton">
+            <summary>
+            name of the CSS class when jumping button is disabled.
+            jumping buttons are prev-next and first-last buttons
+            <param>Default: disabled</param>
+            <para>Example: disabled, d-hidden</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassTotalRecords">
+            <summary>
+            CSS class for total records info
+            <para>Default: badge badge-light</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassTotalPages">
+            <summary>
+            CSS class for total pages info
+            <para>Default: badge badge-light</para>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.PageControls.PagingTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process the tag helper creating the paging control
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.PageControls.PagingTagHelper.SetDefaults">
+            <summary>
+            This method will assign the values by checking three places
+            1- Attribute value if set on the tag in HTML code
+            2- Default values if set in appSettings.json
+            3- Hard-coded default values in this method
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.PageControls.PhoneNumberTagHelper">
+            <summary>
+            A display for phone number
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PhoneNumberTagHelper.PhoneNumberConfirmed">
+            <summary>
+            Indicate wgether the phone number has been confirmed or not.
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.PageControls.PhoneNumberTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process creating phone number tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.PageControls.SelectEnumTagHelper">
+            <summary>
+            Creates a dropdown list from an enum.
+            <para>Supports localization.</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.SelectEnumTagHelper.SelectedValue">
+            <summary>
+            (int)MyEnum.ValueName
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.SelectEnumTagHelper.EnumType">
+            <summary>
+            typeof(MyEnum)
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.SelectEnumTagHelper.TextLocalizerDelegate">
+            <summary>
+            Localization method as a delegate to to the _localizaer indexer.
+            e.g. delegate(string s) { return _localizaer["My value"]; }
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.PageControls.SelectEnumTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Creates the select-enum tag html
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
         </member>
     </members>
 </doc>
