@@ -55,10 +55,21 @@ namespace MMS.Core.Localization {
 		public string GetLocalizedString(string culture, string key, params object[] args) {
 			var sw = new StringWriter();
 
-			if (args == null)
-				_localizer.WithCulture(CultureInfo.GetCultureInfo(culture))[key].WriteTo(sw, HtmlEncoder.Default);
-			else
-				_localizer.WithCulture(CultureInfo.GetCultureInfo(culture))[key, args].WriteTo(sw, HtmlEncoder.Default);
+			var curCul = CultureInfo.CurrentCulture;
+			var curUiCul = CultureInfo.CurrentUICulture;
+			CultureInfo.CurrentCulture = new CultureInfo(culture);
+			CultureInfo.CurrentUICulture = new CultureInfo(culture);
+
+			if (args == null) {
+				_localizer[key].WriteTo(sw, HtmlEncoder.Default);
+				//_localizer.WithCulture(CultureInfo.GetCultureInfo(culture))[key].WriteTo(sw, HtmlEncoder.Default);
+
+			} else {
+				_localizer[key, args].WriteTo(sw, HtmlEncoder.Default);
+				//_localizer.WithCulture(CultureInfo.GetCultureInfo(culture))[key, args].WriteTo(sw, HtmlEncoder.Default);
+			}
+			CultureInfo.CurrentCulture = curCul;
+			CultureInfo.CurrentUICulture = curUiCul;
 
 			return sw.ToString();
 		}
@@ -115,9 +126,19 @@ namespace MMS.Core.Localization {
 		/// <param name="args"></param>
 		/// <returns>LocalizedHtmlString</returns>
 		public LocalizedHtmlString GetLocalizedHtmlString(string culture, string key, params object[] args) {
-			return args == null
-				? _localizer.WithCulture(CultureInfo.GetCultureInfo(culture))[key]
-				: _localizer.WithCulture(CultureInfo.GetCultureInfo(culture))[key, args];
+			var curCul = CultureInfo.CurrentCulture;
+			var curUiCul = CultureInfo.CurrentUICulture;
+			CultureInfo.CurrentCulture = new CultureInfo(culture);
+			CultureInfo.CurrentUICulture = new CultureInfo(culture);
+
+			LocalizedHtmlString result = args == null ? _localizer[key] : _localizer[key, args];
+
+			CultureInfo.CurrentCulture = curCul;
+			CultureInfo.CurrentUICulture = curUiCul;
+			return result;
+			//return args == null
+			//	? _localizer.WithCulture(CultureInfo.GetCultureInfo(culture))[key]
+			//	: _localizer.WithCulture(CultureInfo.GetCultureInfo(culture))[key, args];
 		}
 
 		/// <summary>

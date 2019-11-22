@@ -700,6 +700,55 @@
             </summary>
             <returns>culture name e.g. tr</returns>
         </member>
+        <member name="T:MMS.Core.TagHelpers.Globalization.LocalizeAttributesTagHelper">
+            <summary>
+            Localization tag helper, localize text inside <![CDATA[<localize>Hellow</localize>]]>
+            </summary>
+            
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LocalizeAttributesTagHelper.Localize">
+            <summary>
+            Bool value, true to localize content
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LocalizeAttributesTagHelper.LocalizeAttribute">
+            <summary>
+            localize custom attribute fields
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizeAttributesTagHelper.#ctor(MMS.Core.Localization.SharedCultureLocalizer)">
+            <summary>
+            inject SharedCultureLocalizer
+            </summary>
+            <param name="loc"></param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizeAttributesTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process localize tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Globalization.LocalizeTagHelper">
+            <summary>
+            Localization tag helper, localize text inside <![CDATA[<localize>Hello</localize>]]>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizeTagHelper.#ctor(MMS.Core.Localization.SharedCultureLocalizer)">
+            <summary>
+            inject SharedCultureLocalizer
+            </summary>
+            <param name="loc"></param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizeTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process localize tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
         <member name="T:MMS.Core.TagHelpers.Globalization.Models.LanguageLabel">
             <summary>
             The label to display for language dropdown list on language names
