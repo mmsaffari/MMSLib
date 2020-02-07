@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netcoreapp3.0</TargetFramework>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<ApplicationIcon>files\icon.ico</ApplicationIcon>
 		<Authors>Mohammad M. Saffari</Authors>
 		<Company>saffari.space</Company>
