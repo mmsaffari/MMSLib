@@ -4,6 +4,159 @@
         <name>MMS.Core</name>
     </assembly>
     <members>
+        <member name="T:MMS.Core.Localization.GenericResourceReader">
+            <summary>
+            Reads resource key and return relevant localized string value
+            </summary>
+        </member>
+        <member name="M:MMS.Core.Localization.GenericResourceReader.GetValue``1(System.String,System.String,System.Object[])">
+            <summary>
+            Reads resource key and return relevant localized string value
+            </summary>
+            <typeparam name="T">type of resource file that containes localized string values</typeparam>
+            <param name="culture">Culture name e.g. ar-SY</param>
+            <param name="code">key name to look for</param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MMS.Core.Localization.GenericResourceReader.GetValue(System.Type,System.String,System.String,System.Object[])">
+            <summary>
+            Reads resource key and return relevant localized string value
+            </summary>
+            <param name="resourceSource">Type of the resource that contains the localized strings</param>
+            <param name="culture">Culture name e.g. ar-SY</param>
+            <param name="code">key name to look for</param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MMS.Core.Localization.SharedCultureLocalizer">
+            <summary>
+            Access shared localization resources under folder
+            </summary>
+        </member>
+        <member name="M:MMS.Core.Localization.SharedCultureLocalizer.#ctor(Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory,System.Type)">
+            <summary>
+            Shared culture localizer for razor pages views
+            </summary>
+            <param name="factory"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:MMS.Core.Localization.SharedCultureLocalizer.GetLocalizedString(System.String,System.Object[])">
+            <summary>
+            Get localized formatted string for the provided text with args
+            </summary>
+            <param name="key"></param>
+            <param name="args"></param>
+            <returns>localized string</returns>
+        </member>
+        <member name="M:MMS.Core.Localization.SharedCultureLocalizer.GetLocalizedString(System.String,System.String,System.Object[])">
+            <summary>
+            Localize a string according to specified culture
+            </summary>
+            <param name="culture"></param>
+            <param name="key"></param>
+            <param name="args"></param>
+            <returns>localized string</returns>
+        </member>
+        <member name="M:MMS.Core.Localization.SharedCultureLocalizer.GetLocalizedString(System.Type,System.String,System.String,System.Object[])">
+            <summary>
+            Localize a string according to a specific culture and specified resource type
+            </summary>
+            <param name="resourceSource"></param>
+            <param name="culture"></param>
+            <param name="key"></param>
+            <param name="args"></param>
+            <returns>localized string</returns>
+        </member>
+        <member name="M:MMS.Core.Localization.SharedCultureLocalizer.GetLocalizedString(System.Type,System.String,System.Object[])">
+            <summary>
+            Localize a string value from specified culture resource
+            </summary>
+            <param name="resourceSource"></param>
+            <param name="key"></param>
+            <param name="args"></param>
+            <returns>localized string</returns>
+        </member>
+        <member name="M:MMS.Core.Localization.SharedCultureLocalizer.GetLocalizedHtmlString(System.String,System.Object[])">
+            <summary>
+            Get localized html string for the provided text.
+            <para>Use in UI side, for backend text localization use GetLocalizedString instead</para>
+            </summary>
+            <param name="key"></param>
+            <param name="args"></param>
+            <returns>LocalizedHtmlString</returns>
+        </member>
+        <member name="M:MMS.Core.Localization.SharedCultureLocalizer.GetLocalizedHtmlString(System.String,System.String,System.Object[])">
+            <summary>
+            Localize a string according to specified culture
+            <para>Use in UI side, for backend text localization use GetLocalizedString instead</para>
+            </summary>
+            <param name="culture"></param>
+            <param name="key"></param>
+            <param name="args"></param>
+            <returns>LocalizedHtmlString</returns>
+        </member>
+        <member name="M:MMS.Core.Localization.SharedCultureLocalizer.GetLocalizedHtmlString(System.Type,System.String,System.String,System.Object[])">
+            <summary>
+            Localize a string according to a specific culture and specified resource type
+            <para>Use in UI side, for backend text localization use GetLocalizedString instead</para>
+            </summary>
+            <param name="resourceSource"></param>
+            <param name="culture"></param>
+            <param name="key"></param>
+            <param name="args"></param>
+            <returns>LocalizedHtmlString</returns>
+        </member>
+        <member name="M:MMS.Core.Localization.SharedCultureLocalizer.GetLocalizedHtmlString(System.Type,System.String,System.Object[])">
+            <summary>
+            Localize a string value from specified culture resource
+            <para>Use in UI side, for backend text localization use GetLocalizedString instead</para>
+            </summary>
+            <param name="resourceSource"></param>
+            <param name="key"></param>
+            <param name="args"></param>
+            <returns>LocalizedHtmlString</returns>
+        </member>
+        <member name="M:MMS.Core.Localization.SharedCultureLocalizer.Text(System.String,System.Object[])">
+            <summary>
+            Get localized string for the provided text.
+            <para>Use in UI side, for backend text localization use FormattedText instead</para>
+            </summary>
+            <param name="key"></param>
+            <param name="args"></param>
+            <returns>LocalizedHtmlString</returns>
+        </member>
+        <member name="M:MMS.Core.Localization.SharedCultureLocalizer.Text(System.String,System.String,System.Object[])">
+            <summary>
+            Localize a string according to specified culture
+            <para>Use in UI side, for backend text localization use FormattedText instead</para>
+            </summary>
+            <param name="culture"></param>
+            <param name="key"></param>
+            <param name="args"></param>
+            <returns>LocalizedHtmlString</returns>
+        </member>
+        <member name="M:MMS.Core.Localization.SharedCultureLocalizer.Text(System.Type,System.String,System.String,System.Object[])">
+            <summary>
+            Localize a string according to a specific culture and specified resource type
+            <para>Use in UI side, for backend text localization use FormattedText instead</para>
+            </summary>
+            <param name="resourceSource"></param>
+            <param name="culture"></param>
+            <param name="key"></param>
+            <param name="args"></param>
+            <returns>LocalizedHtmlString</returns>
+        </member>
+        <member name="M:MMS.Core.Localization.SharedCultureLocalizer.Text(System.Type,System.String,System.Object[])">
+            <summary>
+            Localize a string value from specified culture resource
+            <para>Use in UI side, for backend text localization use FormattedText instead</para>
+            </summary>
+            <param name="resourceSource"></param>
+            <param name="key"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
         <member name="T:MMS.Core.Properties.Resources">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.
@@ -446,6 +599,40 @@
             Returns a list of supported CultureInfos
             </summary>
         </member>
+        <member name="T:MMS.Core.TagHelpers.Globalization.LocalizationTagHelperBase">
+            <summary>
+            base class for localize tag helpers
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LocalizationTagHelperBase.Args">
+            <summary>
+            pass array of objects for arguments
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LocalizationTagHelperBase.Culture">
+            <summary>
+            localization string with reference to the specified culture
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LocalizationTagHelperBase.ResourceSource">
+            <summary>
+            type of the source of localized resources file that containes the local culture strings
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizationTagHelperBase.#ctor(MMS.Core.Localization.SharedCultureLocalizer)">
+            <summary>
+            inject SharedCultureLocalizer
+            </summary>
+            <param name="loc"></param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizationTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process localize tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
         <member name="T:MMS.Core.TagHelpers.Globalization.LocalizationValidationScriptsTagHelperComponentTagHelper">
             <summary>
             Creates localization validation scripts tag to place client side validiation scripts inside
@@ -512,6 +699,55 @@
             see ClientSideValidationScripts.html for how to configure paths
             </summary>
             <returns>culture name e.g. tr</returns>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Globalization.LocalizeAttributesTagHelper">
+            <summary>
+            Localization tag helper, localize text inside <![CDATA[<localize>Hellow</localize>]]>
+            </summary>
+            
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LocalizeAttributesTagHelper.Localize">
+            <summary>
+            Bool value, true to localize content
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.Globalization.LocalizeAttributesTagHelper.LocalizeAttribute">
+            <summary>
+            localize custom attribute fields
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizeAttributesTagHelper.#ctor(MMS.Core.Localization.SharedCultureLocalizer)">
+            <summary>
+            inject SharedCultureLocalizer
+            </summary>
+            <param name="loc"></param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizeAttributesTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process localize tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Globalization.LocalizeTagHelper">
+            <summary>
+            Localization tag helper, localize text inside <![CDATA[<localize>Hello</localize>]]>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizeTagHelper.#ctor(MMS.Core.Localization.SharedCultureLocalizer)">
+            <summary>
+            inject SharedCultureLocalizer
+            </summary>
+            <param name="loc"></param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Globalization.LocalizeTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process localize tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
         </member>
         <member name="T:MMS.Core.TagHelpers.Globalization.Models.LanguageLabel">
             <summary>
