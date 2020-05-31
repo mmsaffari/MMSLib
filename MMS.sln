@@ -7,7 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".net core", ".net core", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asp.net core", "asp.net core", "{CCC992E9-6843-49C1-83D6-9571CF99A03C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMS.Core", "MMS.Core\MMS.Core.csproj", "{2D09B1D1-F3BC-441F-9519-512A8B3C7A04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MMS.Core", "MMS.Core\MMS.Core.csproj", "{2D09B1D1-F3BC-441F-9519-512A8B3C7A04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{7A49103E-8507-4440-9371-1CC4B919D1D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sample_net_core_31_mvc", "sample_net_core_31_mvc\sample_net_core_31_mvc.csproj", "{E7CFBE9D-4DFE-4B39-BCC2-87285A7A7197}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,10 @@ Global
 		{2D09B1D1-F3BC-441F-9519-512A8B3C7A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D09B1D1-F3BC-441F-9519-512A8B3C7A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D09B1D1-F3BC-441F-9519-512A8B3C7A04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7CFBE9D-4DFE-4B39-BCC2-87285A7A7197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CFBE9D-4DFE-4B39-BCC2-87285A7A7197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CFBE9D-4DFE-4B39-BCC2-87285A7A7197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CFBE9D-4DFE-4B39-BCC2-87285A7A7197}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,6 +34,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{CCC992E9-6843-49C1-83D6-9571CF99A03C} = {910A6158-C0EF-4428-9321-B21DF6672D60}
 		{2D09B1D1-F3BC-441F-9519-512A8B3C7A04} = {CCC992E9-6843-49C1-83D6-9571CF99A03C}
+		{E7CFBE9D-4DFE-4B39-BCC2-87285A7A7197} = {7A49103E-8507-4440-9371-1CC4B919D1D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9EC33C16-C636-4703-9957-A37606507E9C}

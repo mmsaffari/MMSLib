@@ -29,6 +29,234 @@
             <param name="args"></param>
             <returns></returns>
         </member>
+        <member name="T:MMS.Core.Localization.NumberFormats.NumberFormats">
+            <summary>
+            Number formats for different cultures.
+            <para>https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/numberingSystems.json</para>
+            </summary>
+        </member>
+        <member name="M:MMS.Core.Localization.NumberFormats.NumberFormats.ToNumberFormat(System.Int32,System.String)">
+            <summary>
+            Receives a number in system format, and converts it to any other format.
+            See <see cref="T:MMS.Core.Localization.NumberFormats.NumberFormats"/>
+            </summary>
+            <param name="number"></param>
+            <param name="targetFormat"></param>
+            <returns></returns>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Default">
+            <summary>
+            System default numbering format
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Arabic">
+            <summary>
+            0123456789
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Hex">
+            <summary>
+            Use hexadecimal numbering system
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Roman">
+            <summary>
+            I II III IV V VI
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Hindi">
+            <summary>
+            ٠١٢٣٤٥٦٧٨٩
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Brah">
+            <summary>
+            𑁦𑁧𑁨𑁩𑁪𑁫𑁬𑁭𑁮𑁯
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Beng">
+            <summary>
+            ০১২৩৪৫৬৭৮৯
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Deva">
+            <summary>
+            ०१२३४५६७८९
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Farsi">
+            <summary>
+            ۰۱۲۳۴۵۶۷۸۹
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Fullwide">
+            <summary>
+            ０１２３４５６７８９
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Knda">
+            <summary>
+            ೦೧೨೩೪೫೬೭೮೯
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Gujr">
+            <summary>
+            ૦૧૨૩૪૫૬૭૮૯
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Guru">
+            <summary>
+            ੦੧੨੩੪੫੬੭੮੯
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Hanidec">
+            <summary>
+            〇一二三四五六七八九
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Java">
+            <summary>
+            ꧐꧑꧒꧓꧔꧕꧖꧗꧘꧙
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Khmr">
+            <summary>
+            ០១២៣៤៥៦៧៨៩
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Laoo">
+            <summary>
+            ໐໑໒໓໔໕໖໗໘໙
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Latin">
+            <summary>
+            0123456789
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Mathbold">
+            <summary>
+            𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Mathborder">
+            <summary>
+            𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Mathmono">
+            <summary>
+            𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Mathanb">
+            <summary>
+            𝟬𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Mathsans">
+            <summary>
+            𝟢𝟣𝟤𝟥𝟦𝟧𝟨𝟩𝟪𝟫
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Mlym">
+            <summary>
+            ൦൧൨൩൪൫൬൭൮൯
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Mong">
+            <summary>
+            ᠐᠑᠒᠓᠔᠕᠖᠗᠘᠙
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Mymr">
+            <summary>
+            ၀၁၂၃၄၅၆၇၈၉
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Mymrshan">
+            <summary>
+            ႐႑႒႓႔႕႖႗႘႙
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Mymtlng">
+            <summary>
+            ꧰꧱꧲꧳꧴꧵꧶꧷꧸꧹
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Nkoo">
+            <summary>
+            ߀߁߂߃߄߅߆߇߈߉
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Olck">
+            <summary>
+            ᱐᱑᱒᱓᱔᱕᱖᱗᱘᱙
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Orya">
+            <summary>
+            ୦୧୨୩୪୫୬୭୮୯
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Osma">
+            <summary>
+            𐒠𐒡𐒢𐒣𐒤𐒥𐒦𐒧𐒨𐒩
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Sinh">
+            <summary>
+            ෦෧෨෩෪෫෬෭෮෯
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Talu">
+            <summary>
+            ᧐᧑᧒᧓᧔᧕᧖᧗᧘᧙
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Tamldec">
+            <summary>
+            ௦௧௨௩௪௫௬௭௮௯
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Telu">
+            <summary>
+            ౦౧౨౩౪౫౬౭౮౯
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Thai">
+            <summary>
+            ๐๑๒๓๔๕๖๗๘๙
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Tibt">
+            <summary>
+            ༠༡༢༣༤༥༦༧༨༩
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.NumberFormats.Vaii">
+            <summary>
+            ꘠꘡꘢꘣꘤꘥꘦꘧꘨꘩
+            </summary>
+        </member>
+        <member name="T:MMS.Core.Localization.NumberFormats.RomanNumerals">
+            <summary>
+            Convert decimals to roman numerals
+            </summary>
+        </member>
+        <member name="F:MMS.Core.Localization.NumberFormats.RomanNumerals.RomanNumbers">
+            <summary>
+            Dictionary of roman numbers and their equavilant decimals
+            <!-- https://stackoverflow.com/a/60134781/5519026 -->
+            </summary>
+        </member>
+        <member name="M:MMS.Core.Localization.NumberFormats.RomanNumerals.ToRoman(System.UInt32)">
+            <summary>
+            Convert decimal number to roman number
+            </summary>
+            <param name="number">unsigned number</param>
+            <returns>Roman number</returns>
+        </member>
         <member name="T:MMS.Core.Localization.SharedCultureLocalizer">
             <summary>
             Access shared localization resources under folder
@@ -220,6 +448,83 @@
             <summary>
             Create dark alert
             </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.Alerts.TempDataExtensions">
+            <summary>
+            Extensions for TempData for creating coder friendly alerts easily
+            </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Alerts.TempDataExtensions.Primary(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create primary alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Alerts.TempDataExtensions.Secondary(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create secondary alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Alerts.TempDataExtensions.Success(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create success alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Alerts.TempDataExtensions.Danger(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create danger alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Alerts.TempDataExtensions.Warning(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create warning alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Alerts.TempDataExtensions.Info(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create info alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Alerts.TempDataExtensions.Light(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create light alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.Alerts.TempDataExtensions.Dark(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
+            <summary>
+            Create dark alert
+            </summary>
+            <param name="tempData">TempData</param>
+            <param name="message">Message body</param>
+            <param name="header">Message header</param>
+            <param name="dismissable">Show closing button</param>
         </member>
         <member name="T:MMS.Core.TagHelpers.Alerts.AlertInfoTagHelper">
             <summary>
@@ -423,78 +728,6 @@
             <param name="tempData"></param>
             <param name="key"></param>
             <returns></returns>
-        </member>
-        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Primary(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
-            <summary>
-            Create primary alert
-            </summary>
-            <param name="tempData">TempData</param>
-            <param name="message">Message body</param>
-            <param name="header">Message header</param>
-            <param name="dismissable">Show closing button</param>
-        </member>
-        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Secondary(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
-            <summary>
-            Create secondary alert
-            </summary>
-            <param name="tempData">TempData</param>
-            <param name="message">Message body</param>
-            <param name="header">Message header</param>
-            <param name="dismissable">Show closing button</param>
-        </member>
-        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Success(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
-            <summary>
-            Create success alert
-            </summary>
-            <param name="tempData">TempData</param>
-            <param name="message">Message body</param>
-            <param name="header">Message header</param>
-            <param name="dismissable">Show closing button</param>
-        </member>
-        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Danger(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
-            <summary>
-            Create danger alert
-            </summary>
-            <param name="tempData">TempData</param>
-            <param name="message">Message body</param>
-            <param name="header">Message header</param>
-            <param name="dismissable">Show closing button</param>
-        </member>
-        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Warning(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
-            <summary>
-            Create warning alert
-            </summary>
-            <param name="tempData">TempData</param>
-            <param name="message">Message body</param>
-            <param name="header">Message header</param>
-            <param name="dismissable">Show closing button</param>
-        </member>
-        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Info(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
-            <summary>
-            Create info alert
-            </summary>
-            <param name="tempData">TempData</param>
-            <param name="message">Message body</param>
-            <param name="header">Message header</param>
-            <param name="dismissable">Show closing button</param>
-        </member>
-        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Light(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
-            <summary>
-            Create light alert
-            </summary>
-            <param name="tempData">TempData</param>
-            <param name="message">Message body</param>
-            <param name="header">Message header</param>
-            <param name="dismissable">Show closing button</param>
-        </member>
-        <member name="M:MMS.Core.TagHelpers.Extensions.TempDataExtensions.Dark(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.String,System.Boolean)">
-            <summary>
-            Create dark alert
-            </summary>
-            <param name="tempData">TempData</param>
-            <param name="message">Message body</param>
-            <param name="header">Message header</param>
-            <param name="dismissable">Show closing button</param>
         </member>
         <member name="T:MMS.Core.TagHelpers.Globalization.LanguageNavTagHelper">
             <summary>
@@ -866,270 +1099,380 @@
             <param name="output"></param>
             <returns></returns>
         </member>
+        <member name="T:MMS.Core.TagHelpers.PageControls.Models.AjaxMethod">
+            <summary>
+            The http request method
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.PageControls.Models.AjaxMethod.get">
+            <summary>
+            get request
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.PageControls.Models.AjaxMethod.post">
+            <summary>
+            post request
+            </summary>
+        </member>
+        <member name="T:MMS.Core.TagHelpers.PageControls.Models.PagingAjaxMode">
+            <summary>
+            ajax update modes
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.PageControls.Models.PagingAjaxMode.before">
+            <summary>
+            update before target content
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.PageControls.Models.PagingAjaxMode.after">
+            <summary>
+            update after target content
+            </summary>
+        </member>
+        <member name="F:MMS.Core.TagHelpers.PageControls.Models.PagingAjaxMode.replace">
+            <summary>
+            replace target content
+            </summary>
+        </member>
         <member name="T:MMS.Core.TagHelpers.PageControls.PagingTagHelper">
             <summary>
             Creates a pagination control
             </summary>
         </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.AjaxAttributes">
+            <summary>
+            Dictonary object to hold all ajax attributes
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.UrlTemplate">
+            <summary>
+            A URL template for paging buttons
+            e.g. 
+            <![CDATA[?p={0}&s={1}&q=test]]>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ViewContext">
+            <summary>
+            <para>ViewContext property is not required to be passed as parameter, it will be assigned automatically by the tag helper.</para>
+            <para>View context is required to access TempData dictionary that contains the alerts coming from backend</para>
+            </summary>
+        </member>
         <member name="M:MMS.Core.TagHelpers.PageControls.PagingTagHelper.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{MMS.Core.TagHelpers.PageControls.PagingTagHelper})">
             <summary>
-            Creates a PagingTagHelper and injects Configuration and Logger properties.
+            Creates a pagination control
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.PageNo">
             <summary>
-            Current page number
-            <para>Default: 1</para>
-            <para>Example: p=1</para>
+            current page number.
+            <para>default: 1</para>
+            <para>example: p=1</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.PageSize">
             <summary>
-            Number of records shown on each page
-            <para>Default: 25</para>
-            <para>Example: pagesize=25</para>
+            how many items to get from db per page per request
+            <para>default: 10</para>
+            <para>example: pageSize=10</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TotalRecords">
             <summary>
-            Total record count
-            <para>Default: 0</para>
+            Total count of records in the db
+            <para>default: 0</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.MaxDisplayedPages">
             <summary>
-            If the count of pages is more than this attribute, show only this number of pages with numbered buttons and show an ellipsis for other pages.
-            <para>Default: 10</para>
+            if count of pages is too much, restrict shown pages count to specific number
+            <para>default: 10</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.GapSize">
             <summary>
             Gap size to start show first/last numbered page
-            <para>Default: 5</para>
+            <para>default: 3</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.SettingsJson">
             <summary>
-            Name of the paging section in <b>MMS:Paging</b> section inside appSettings.json
-            <param>Default: "default"</param>
-            </summary>
-        </member>
-        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.PageSizeNavFormMethod">
-            <summary>
-            Form submit method when selecting different page size option
-            <para>Default: get</para>
-            <para>Options: get, post</para>
+            name of the settings section in appSettings.json
+            <param>default: "default"</param>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.PageSizeNavBlockSize">
             <summary>
-            The minimum block size to populate all possible page sizes for dropdown list
-            <para>Default: 25</para>
+            This property is deprected. Use PageSizeDropdownItems instead
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.PageSizeNavMaxItems">
             <summary>
-            Maximum nmber of items to show in the page size navigation menu
-            <para>Default: 5</para>
+            This property is deprected. Use PageSizeDropdownItems instead
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.PageSizeDropdownItems">
+            <summary>
+            A list of dash delimitted numbers for page size dropdown. 
+            default: "10-25-50"
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.PageSizeNavOnChange">
             <summary>
-            Action to execute when page size dropdown changes
-            <para>Default: this.form.submit();</para>
+            action to take when page size dropdown changes
+            <para>default: this.form.submit();</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.QueryStringKeyPageNo">
             <summary>
             Query string paramter name for current page.
-            <para>Default: p</para>
+            <para>default: p</para>
             <para>exmaple: p=1</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.QueryStringKeyPageSize">
             <summary>
             Query string parameter name for page size
-            <para>Default: s</para>
-            <para>Example: s=25</para>
+            <para>default: s</para>
+            <para>example: s=25</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.QueryStringValue">
             <summary>
-            Query string value starting from the ? including all next query string parameters 
-            to consider for next pages links.
-            <para>Default: string.Empty</para>
-            <example>
-            <code>
-            @(Request.QueryString.Value)
-            </code>
-            </example>
+            query-string-value is obsolte and will be removed in a future release.
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowPageSizeNav">
             <summary>
             Show drop down list for different page size options
-            <para>Default: false</para>
-            <para>Options: true, false</para>
+            <para>default: true</para>
+            <para>options: true, false</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowGap">
+            <summary>
+            Show a three dots after first page or before last page 
+            when there is a gap in pages at the beginnig or end
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowFirstLast">
             <summary>
-            Show or hide First and Last page buttons
-            <para>Default: false, but will auto show if total pages > max displayed pages</para>
+            Show/hide First-Last buttons
+            <para>default: true, if set to false and total pages > max displayed pages it will be true</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowPrevNext">
             <summary>
-            Show or hide Previous and Next page buttons
-            <para>Default: false</para>
+            Show/hide Previous-Next buttons
+            <para>default: true</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowTotalPages">
             <summary>
             Show or hide total pages count
-            <para>Default: false</para>
+            <para>default: true</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowTotalRecords">
             <summary>
             Show or hide total records count
-            <para>Default: false</para>
+            <para>default: true</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowLastNumberedPage">
             <summary>
             Show last numbered page when total pages count is larger than max displayed pages
-            <para>Default: false</para>
+            <para>default: true</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ShowFirstNumberedPage">
             <summary>
             Show first numbered page when total pages count is larger than max displayed pages
-            <para>Default: false</para>
+            <para>default: true</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextPageSize">
             <summary>
             The text to display at page size dropdown list label
-            <para>Default: Items per page </para>
+            <para>default: Page size </para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextFirst">
             <summary>
             Text to show on the "Go To First" Page button
             <para>
-            <![CDATA[Default: &laquo;]]></para>
+            <![CDATA[default: &laquo;]]></para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextLast">
             <summary>
             Text to show on "Go to last page" button
             <para>
-            <![CDATA[Default: &raquo;]]></para>
+            <![CDATA[default: &raquo;]]></para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextNext">
             <summary>
             Next button text
             <para>
-            <![CDATA[Default: &rsaquo;]]></para>
+            <![CDATA[default: &rsaquo;]]></para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextPrevious">
             <summary>
             previous button text
             <para>
-            <![CDATA[Default: &lsaquo;]]></para>
+            <![CDATA[default: &lsaquo;]]></para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextTotalPages">
             <summary>
             Display text for total pages label
-            <para>Default: pages</para>
+            <para>default: page</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.TextTotalRecords">
             <summary>
             Display text for total records label
-            <para>Default: records</para>
+            <para>default: records</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.NumberFormat">
+            <summary>
+            The number display format for page numbers. Use a list of numbers splitted by space e.g. "0 1 2 3 4 5 6 7 8 9" or use one from a pre-defined numbers formats in :
+            <see cref="T:MMS.Core.Localization.NumberFormats.NumberFormats"/>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.SrTextFirst">
             <summary>
-            Text for screen readers only on First button
+            Text for screen readers only
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.SrTextLast">
             <summary>
-            Text for screen readers only on Last button
+            text for screen readers only
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.SrTextNext">
             <summary>
-            Text for screenreaders only on Next button
+            text for screenreaders only
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.SrTextPrevious">
             <summary>
-            Text for screen readers only on Previous button
+            text for screen readers only
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.Class">
             <summary>
-            Add custom class to content div
+            add custom class to content div
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassPagingControlDiv">
             <summary>
-            CSS class for pagination div
+            css class for pagination div
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassInfoDiv">
             <summary>
-            CSS class for page count/record count div
+            css class for page count/record count div
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassPageSizeDiv">
             <summary>
-            CSS class for page size div
+            styling class for page size div
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassPagingControl">
             <summary>
-            CSS class for pagination control
-            <para>Default: pagination</para>
+            pagination control class
+            <para>default: pagination</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassActivePage">
             <summary>
-            CSS class name for the active page button
-            <para>Default: active</para>
+            class name for the active page
+            <para>default: active</para>
             <para>examples: disabled, active, ...</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassDisabledJumpingButton">
             <summary>
-            name of the CSS class when jumping button is disabled.
+            name of the class when jumping button is disabled.
             jumping buttons are prev-next and first-last buttons
-            <param>Default: disabled</param>
-            <para>Example: disabled, d-hidden</para>
+            <param>default: disabled</param>
+            <para>example: disabled, d-hidden</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassTotalRecords">
             <summary>
-            CSS class for total records info
-            <para>Default: badge badge-light</para>
+            css class for total records info
+            <para>default: badge badge-light</para>
             </summary>
         </member>
         <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.ClassTotalPages">
             <summary>
-            CSS class for total pages info
-            <para>Default: badge badge-light</para>
+            css class for total pages info
+            <para>default: badge badge-light</para>
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.Ajax">
+            <summary>
+            Set to true to use ajax pagination
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.AjaxConfirm">
+            <summary>
+            The message to display in a confirmation window before a request is submitted.
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.AjaxMode">
+            <summary>
+             The mode that specifies how to insert the response into the target DOM element. Valid values are before, after and replace. Default is replace
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.AjaxLoadingDuration">
+            <summary>
+            A value, in milliseconds, that controls the duration of the animation when showing or hiding the loading element.
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.AjaxLoading">
+            <summary>
+            The id attribute of an HTML element that is displayed while the Ajax function is loading. Default is #loading-spinner
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.AjaxBegin">
+            <summary>
+            The name of the JavaScript function to call immediately before the page is updated.
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.AjaxComplete">
+            <summary>
+            The JavaScript function to call when response data has been instantiated but before the page is updated.
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.AjaxFailure">
+            <summary>
+            The JavaScript function to call if the page update fails.
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.AjaxSuccess">
+            <summary>
+            The JavaScript function to call after the page is successfully updated.
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.AjaxUpdate">
+            <summary>
+            The ID of the DOM element to update by using the response from the server.
+            </summary>
+        </member>
+        <member name="P:MMS.Core.TagHelpers.PageControls.PagingTagHelper.AjaxUrl">
+            <summary>
+            The URL to make the request to.
             </summary>
         </member>
         <member name="M:MMS.Core.TagHelpers.PageControls.PagingTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
             <summary>
-            process the tag helper creating the paging control
+            process creating paging tag helper
             </summary>
             <param name="context"></param>
             <param name="output"></param>
@@ -1137,10 +1480,39 @@
         <member name="M:MMS.Core.TagHelpers.PageControls.PagingTagHelper.SetDefaults">
             <summary>
             This method will assign the values by checking three places
-            1- Attribute value if set on the tag in HTML code
-            2- Default values if set in appSettings.json
-            3- Hard-coded default values in this method
+            1- Property value if set from HTML code
+            2- Default values in appSettings.json
+            3- Hard coded default value in code
             </summary>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.PageControls.PagingTagHelper.CalculateBoundaries(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Calculate the boundaries of the currently rendered page numbers
+            </summary>
+            <param name="currentPageNo"></param>
+            <param name="totalPages"></param>
+            <param name="maxDisplayedPages"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.PageControls.PagingTagHelper.CreatePageSizeControl">
+            <summary>
+            dropdown list for changing page size (items per page)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.PageControls.PagingTagHelper.CreatePagingUrl(System.Int32,System.Int32)">
+            <summary>
+            edit the url for each page, so it navigates to its target page number
+            </summary>
+            <param name="pageNo"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MMS.Core.TagHelpers.PageControls.PagingTagHelper.CreatePagingUrlTemplate">
+            <summary>
+            edit the url for each page, so it navigates to its target page number
+            </summary>
+            <returns>a string with placeholders for page no and page size</returns>
         </member>
         <member name="T:MMS.Core.TagHelpers.PageControls.PhoneNumberTagHelper">
             <summary>
